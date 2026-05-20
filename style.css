@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+}
+
+main {
+    background-color: grey;
+    min-width: 300px;
+    max-width: 1000px;
+}
+article {
+    border: 1px solid black;
+}
+
+#destaque {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Divide em 3 colunas de tamanhos iguais */
+    gap: 20px; /* Espaçamento entre os itens */
+    
+}
+
+.imagem {
+    background-color: white;
+    padding: 20px;
+    width: 300px;
+    height: 400px;
+    displa
+    
+    
+    
+    
+}
