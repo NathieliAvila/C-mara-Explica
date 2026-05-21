@@ -5,11 +5,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 :root {
 
-    --cor-1: #21BFEC;
+    --cor-1: #133123;
     --cor-2: #1a4731;
     --cor-3: #1F3F63;
     --cor-4: #2d6a4f;
-    --cor-5: #D0B022;
+    --cor-5: #b89b1c;
 
     --fonte-01: "Playfair Display", serif;
     --fonte-02: "Source Sans 3", sans-serif;
@@ -21,20 +21,26 @@
 }
 
 body {
-    background-color: #faf7f0;
+    background-color: #f5f2eb;
     font-family: var(--fonte-02);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
-    background-color: var(--cor-2);
+    background-color: var(--cor-1);
     padding: 15px 0px;
     text-align: center;
+    position: fixed;
+    width: 100vw;
+    z-index: 100;
 }
 
 nav{
     display: flex; /* cria contêiner flexivel, redimensionando os elementos. Torna mais responsivo */
     justify-content: center; /* centraliza */
-    gap: 20px; /* Espaçamento entre elementos do menu */
+    gap: 30px; /* Espaçamento entre elementos do menu */
     flex-wrap: wrap; /* quebra de linha */
 }
 
@@ -42,16 +48,21 @@ nav > a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1rem;
     padding: 5px;
     border-radius: 5px;}
 
 nav a:hover {
     background-color: var(--cor-4);
-    transition: 0.5s;
+    transition: 0.7s;
+    color: var(--cor-5);
+    border-bottom: 2px solid var(--cor-5);
 }
+
 
 main {
     width: 100%;
+    flex: 1;
 }
 
 section {
@@ -59,8 +70,7 @@ section {
 }
 
 .container {
-    width: 90%;
-    max-width: 1100px;
+    width: min(90%, 1200px);
     margin: auto;
 }
 
@@ -70,10 +80,10 @@ h1, h2, h3{
 
 /* -----HERO----- */
 #hero {
-    background-color: var(--cor-4);
+    background: linear-gradient(to bottom, var(--cor-1) ,var(--cor-2), var(--cor-4));
     color: white;
     text-align: center;
-    padding: 80px 20px;
+    padding: 120px 20px;
 }
 
 #hero h1 {
@@ -91,33 +101,75 @@ h1, h2, h3{
 
 #sobre {
     background-color: #e8f5ee;
-    padding: 80px 0px;
-   
+    padding: 100px 0px;  
 }
 
-
+h2 {
+    margin-bottom: 30px;
+    font-size: 2.2em;
+    color: var(--cor-2);
+}
 
 #sobre p {
     max-width: 500px;
     font-size: 1.15em;
+    line-height: 1.7em;
 }
 
-.cards {
+.inicio {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
+    gap: 4rem;
+    align-items: center;
+}
+
+.inicio img {
+    width: 220px;
+    justify-self: center;
+}
+
+
+#destaques span {
+    color: var(--cor-5);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.2em;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 320px));
+    gap: 30px;
 }
 
 .card {
-    border: 1px solid black;
+    background-color: white;
     border-radius: 15px;
     padding: 20px;
+
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.267);
 }
 
+.card h3, h2 {
+    margin-bottom: 15px;
+    color: var(--cor-2);
+}
 
+.card p {
+    line-height: 1.6em;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+
+article img {
+    width: 90px;
+    display: block;
+    margin: 0px auto 20px auto;
+}
 
 footer{
     background-color: black;
     color: white;
     text-align: center;
+    padding: 80px 0px;
 }
