@@ -172,6 +172,18 @@ article img {
     margin: 0px auto 20px auto;
 }
 
+article a {
+    text-decoration: none;
+    color: var(--cor-5);
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    
+}
+
 footer{
     background-color: black;
     color: white;
