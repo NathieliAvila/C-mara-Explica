@@ -13,10 +13,10 @@
             <a href="index.html">Home</a>
             <a href="Camara.html">A Câmara</a>
             <a href="vereadores.html" class="ativo">Vereadores</a>
-            <a href="#">Legislação</a>
-            <a href="#">Portal da Transparência</a>
-            <a href="#">Bastidores</a>
-            <a href="#">Contatos</a>
+            <a href="legislacao.html">Legislação</a>
+            <a href="transparencia.html">Portal da Transparência</a>
+            <a href="bastidores.html">Bastidores</a>
+            <a href="contatos.html">Contatos</a>
         </nav>
     </header>
 
@@ -40,10 +40,10 @@
     <section class="sobre" id="vereadores-inicio">
         <div class="container">
             <span class="letra">Representação popular</span>
-            <section>
+            <div>
                 <h2>O vereador é seu representante mais próximo</h2>
                 <p>O vereador é o membro da Câmara Municipal eleito pelo voto popular para fazer parte do Poder Legislativo na esfera Municipal durante um mandato de 4 anos. Seu principal objetivo é representar os interesses dos cidadãos, sendo o elo entre a prefeitura e a população.</p>
-            </section>
+            </div>
         </div>
     </section>
     
@@ -52,29 +52,25 @@
     <section id="funcoes"> 
         <div class="container">
             <h2>Principais funções do vereador</h2>
-            
             <p>O vereador não é apenas um político que vota em plenário. Seu trabalho envolve três grandes responsabilidades que impactam diretamente a vida dos moradores do município.</p>
             
             <div class="grid-base funcoes-cards">
-                <section class="funcoes-card card-base">
+                <article class="funcoes-card card-base">
                     <h3>Legislar</h3>
+                    <p>Propor, debater e votar projetos de lei que impactam diretamente a vida do município, desde o zoneamento urbano até normas de saúde e educação.</p>
+                </article>
             
-                    Propor, debater e votar projetos de lei que impactam diretamente a vida do município, desde o zoneamento urbano até normas de saúde e educação.
-                </section>
-            
-                <section class="funcoes-card card-base">
+                <article class="funcoes-card card-base">
                     <h3>Fiscalizar</h3>
-            
                     <p>Acompanhar e controlar de perto o trabalho da prefeitura, verificando se o prefeito e seus secretários estão cumprindo as leis vigentes e fazendo o uso do dinheiro público de forma correta.</p>
-                </section>
+                </article>
             
-                <section class="funcoes-card card-base">
+                <article class="funcoes-card card-base">
                     <h3>Representar</h3>
-            
                     <p>Ser a voz dos cidadãos dentro da Câmara, levando as demandas, sugestões e reclamações da população para o debate legislativo e cobrando providências da Prefeitura.</p>
-                </section>
+                </article>
             </div>
-            <p>Saiba mais sobre como um vereador propõe um projeto de lei na nossa seção Legislação (LINK)</p>
+            <p id="link">Quer saber mais sobre o processo legislativo? <a href="#">Veja nossa página de Legislação →</a></p>
         </div>
     </section>
     
@@ -124,31 +120,40 @@
     
     
     
-    <section class="sobre">
+    <section class="sobre" id="eleito">
         <div class="container">
             <h2>Quem pode ser vereador e como é eleito?</h2>
             
-            <h3>Requisitos para candidatura</h3>
-            
-            O candidato precisa ter no mínimo 18 anos, ser eleitor no município, estar filiado a um partido político há pelo menos 6 meses antes da eleição e ter domicílio eleitoral na cidade.
-            
-            
-    
-            <h3>Registro da candidatura</h3>
-            
-            O candidato registra sua candidatura no Tribunal Regional Eleitoral (TRE) com o apoio do seu partido. O TSE verifica se todos os requisitos legais são cumpridos.
-            
-            
-            
-            <h3>Campanha e eleição</h3>
-            
-            As eleições municipais ocorrem a cada 4 anos, no primeiro domingo de outubro. Os vereadores são eleitos pelo sistema proporcional, que leva em conta tanto os votos do candidato quanto os do partido.
-            
-            
-            
-            <h3>Posse e mandato</h3>
-            
-            Os eleitos tomam posse em 1º de janeiro do ano seguinte à eleição. O mandato dura 4 anos, podendo o vereador se reeleger quantas vezes quiser.
+            <div class="grid-base grid-eleito">
+                <div class="card-base card-eleito">
+                    <h3>Requisitos para candidatura</h3>
+                    
+                    <p>O candidato precisa ter no mínimo 18 anos, ser eleitor no município, estar filiado a um partido político há pelo menos 6 meses antes da eleição e ter domicílio eleitoral na cidade.</p>
+                    
+                </div>
+                
+                <div class="card-base card-eleito">
+                    <h3>Registro da candidatura</h3>
+                    
+                    <p>O candidato registra sua candidatura no Tribunal Regional Eleitoral (TRE) com o apoio do seu partido. O TSE verifica se todos os requisitos legais são cumpridos.</p>
+                </div>
+                
+                
+                
+                <div class="card-base card-eleito">
+                    <h3>Campanha e eleição</h3>
+                    
+                    <p>As eleições municipais ocorrem a cada 4 anos, no primeiro domingo de outubro. Os vereadores são eleitos pelo sistema proporcional, que leva em conta tanto os votos do candidato quanto os do partido.</p>
+                </div>
+                
+                
+                
+                <div class="card-base card-eleito">
+                    <h3>Posse e mandato</h3>
+                    
+                    <p>Os eleitos tomam posse em 1º de janeiro do ano seguinte à eleição. O mandato dura 4 anos, podendo o vereador se reeleger quantas vezes quiser.</p>
+                </div>
+            </div>
         </div>
     </section>
     
@@ -220,23 +225,26 @@
     
     
     
-    <section>
+    <section id="acompanhar">
         <div class="container">
             <h2>Como acompanhar o trabalho do vereador?</h2>
         
             <p>Você não precisa esperar pela próxima eleição para saber o que seu vereador está fazendo. Existem vários canais para acompanhar o mandato em tempo real.</p>
         
-            <h3>Site da Câmara</h3>
-        
-            A Câmara Municipal de Fundão publica a pauta das sessões, as atas, indicações e os projetos apresentados de cada vereador em seu site oficial.
-        
-            <h3>Transmissão ao vivo</h3>
-        
-            A Câmara Municipal de Fundão transmite as sessões pelo YouTube. Você pode assistir de casa e acompanhar as votações em tempo real.
-        
-            <h3>Portal da Transparência</h3>
-        
-            No portal, você pode consultar gastos do gabinete, viagens, contratações e a declaração de bens de cada vereador.
+            <div class="grid-base grid-acompanhar">
+                <div class="card-base card-acompanhar">
+                    <h3>Site da Câmara</h3>
+                    A Câmara Municipal de Fundão publica a pauta das sessões, as atas, indicações e os projetos apresentados de cada vereador em seu site oficial.
+                </div>
+                <div class="card-base card-acompanhar">
+                    <h3>Transmissão ao vivo</h3>
+                    A Câmara Municipal de Fundão transmite as sessões pelo YouTube. Você pode assistir de casa e acompanhar as votações em tempo real.
+                </div>
+                <div class="card-base card-acompanhar">
+                    <h3>Portal da Transparência</h3>
+                    No portal, você pode consultar gastos do gabinete, viagens, contratações e a declaração de bens de cada vereador.
+                </div>
+            </div>
         </div>
     </section>
 </main> 

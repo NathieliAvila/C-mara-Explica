@@ -13,6 +13,7 @@
     --cor-3: #1F3F63;
     --cor-4: #2d6a4f;
     --cor-5: #b89b1c;
+    --cor-6: rgb(94, 94, 94);
 
     --fonte-01: "Playfair Display", serif;
     --fonte-02: "Source Sans 3", sans-serif;
@@ -215,10 +216,10 @@ article a:hover {
 
 .camara-cards {
     
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .camara-card {
-    padding: 40px;
+    padding: 20px 20px 15px 40px;
 }
 
 
@@ -226,6 +227,18 @@ article a:hover {
 
 #vereadores-inicio, #vereador {
     background-color: white;
+}
+
+
+#link {
+    margin-top: 50px ;
+}
+
+.funcoes-card {
+    margin-top: 30px;
+}
+.funcoes-card h3 {
+    color: var(--cor-5);
 }
 
 .vereador-cards {
@@ -238,29 +251,67 @@ article a:hover {
     padding: 40px;
 }
 
-#quantidade {
-    background-color: var(--cor-1);
+.grid-eleito {
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
 }
 
-#quantidade h2{
+.card-eleito {
+    border-radius: 0px;
+    color: var(--cor-6);
+    border-top-color: white;
+}
+
+
+#quantidade {
+    background-color: var(--cor-2);
+}
+
+#quantidade h2, #quantidade p{
     color: white;
 }
 
+#acompanhar h3 {
+    color: var(--cor-5);
+}
+
+
 table {
-    border: 1px solid black;
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    max-width: 600px;
     border-collapse: collapse;
     margin: auto;
 }
 
 td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: center;
-            vertical-align: middle;
-        }
+    
+    border: 1px solid rgba(107, 107, 107, 0.466);
+    background-color: white;
+    padding: 15px 5px;
+    text-align: center;
+    vertical-align: middle;
+}
 
 
+.grid-acompanhar{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:1.5rem;
+    margin-top:2rem
+}
 
 
+.card-acompanhar{
+    background: var(--cor-2);
+    color:white;
+    border-radius: 5px;
+    border: 1px solid var(--cor-4);
+    padding:1.8rem;
+}
+
+.card-acompanhar h3 {
+    color: white;
+}
+    
+    
+
+ 
