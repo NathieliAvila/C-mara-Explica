@@ -326,8 +326,10 @@ td {
 }
 
 #lai {
-/*     background-color: rgba(252, 113, 113, 0.548); */
+    background-color: #fdf3e0;
     padding: 20px;
+    border: 1px solid #e8d9bc;
+    color: #5c3a00;
 }
 
 .grid-lai {
@@ -337,4 +339,8 @@ td {
 .card-lai {
     border-radius: 0px;
     border: 2px solid var(--cor-1);
+}
+
+ul {
+    list-style-position: inside;
 }
