@@ -136,7 +136,7 @@ footer{
 
 /* HERO */
 
-#hero {
+.hero {
     background: linear-gradient(to bottom, var(--cor-1) ,var(--cor-2), var(--cor-4));
     color: white;
     text-align: center;
@@ -144,12 +144,12 @@ footer{
     display: flex;
 }
 
-#hero h1 {
+.hero h1 {
     font-size: 4em;
     margin-bottom: 20px;
 }
 
-#hero p {
+.hero p {
     font-size: 1.2em;
     max-width: 700px;
     margin: auto;
@@ -315,3 +315,28 @@ td {
     
 
  
+/* BASTIDORES */
+
+.grid-servidores {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.img-servidores {
+    max-width: 600px;
+    display: block;
+    margin: auto;
+}
+
+#lai {
+/*     background-color: rgba(252, 113, 113, 0.548); */
+    padding: 20px;
+}
+
+.grid-lai {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.card-lai {
+    border-radius: 0px;
+    border: 2px solid var(--cor-1);
+}
