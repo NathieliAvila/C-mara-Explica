@@ -28,9 +28,7 @@
 
 /* BASE */
 
-section {
-    padding: 50px 0px;
-}
+
 body {
     background-color: #f5f2eb;
     font-family: var(--fonte-02);
@@ -101,7 +99,7 @@ main {
 .container {
     width: min(90%, 1200px);
     margin: auto;
-    padding-bottom: 25px;
+    padding: 40px 0px;
 }
 
 
