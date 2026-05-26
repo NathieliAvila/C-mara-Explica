@@ -57,6 +57,13 @@ p {
     line-height: 1.7em;
 }
 
+p + p {
+    margin-top: 16px;
+}
+
+article > span > img {
+   max-width: 30%;
+}
 
 /* LAYOUT GERAL */
 
@@ -154,11 +161,22 @@ footer{
     line-height: 30px;
 }
 
+
+
+.secao-linha {
+      width: 50px;
+      height: 3px;
+      background: var(--cor-5);
+      margin-bottom: 2.2rem;
+    }
+
 /* HOME */
 
 #home {
     background-color: #e8f5ee;
 }
+
+
 .home-inicio p {
     max-width: 500px;
 }
@@ -171,8 +189,8 @@ footer{
 }
 
 .home-inicio img {
-    width: 220px;
-    justify-self: center;
+    max-width: 90%;
+    margin: auto;
 }
 
 
@@ -189,7 +207,7 @@ footer{
 }
 
 article img {
-    width: 90px;
+    width: 100%;
     display: block;
     margin: 0px auto 20px auto;
 }
@@ -212,6 +230,13 @@ article a:hover {
 
 /* CÂMARA */
 
+.sobre, #organizacao {
+    background-color: white;
+}
+
+
+
+
 .camara-cards {
     
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -219,6 +244,10 @@ article a:hover {
 .camara-card {
     padding: 20px 20px 15px 40px;
 }
+
+/* #organizacao > .container > p {
+    padding: 40px 0px 0px 0px;
+} */
 
 
 /* VEREADORES */
@@ -311,8 +340,12 @@ td {
 }
     
     
-
+/* LEGISLAÇÃO */
  
+.grid-caminho {
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+}
+
 /* BASTIDORES */
 
 .grid-servidores {
