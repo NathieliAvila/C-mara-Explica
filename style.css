@@ -12,7 +12,7 @@
     --cor-2: #1a4731;
     --cor-4: #2d6a4f;
     --cor-5: #b89b1c;
-    --cor-6: rgb(94, 94, 94);
+    --cor-6: #5e5e5e;
 
     --fonte-01: "Playfair Display", serif;
     --fonte-02: "Source Sans 3", sans-serif;
@@ -64,6 +64,10 @@ article > span > img {
    max-width: 30%;
 }
 
+.sobre-destaque-icon img {
+    width: 20%;
+}
+
 /* LAYOUT GERAL */
 
 header {
@@ -94,6 +98,7 @@ nav > a {
 nav a:hover, a.ativo {
     color: var(--cor-5);
     border-bottom: 2px solid var(--cor-5);
+    text-decoration: none;
 }
 
 main {
@@ -280,8 +285,6 @@ a:hover {
 }
 
 
-
-
 .vereador-cards {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     
@@ -296,25 +299,19 @@ a:hover {
     border-top: 3px solid rgb(17, 151, 17);
 }
 
-.pode > h3 {
+.pode > h3, .pode li::marker  {
     color: rgb(17, 151, 17);
 }
 
-.pode li::marker {
-    color: rgb(17, 151, 17);
-}
 
 .n-pode {
     border-top: 3px solid red;
 }
 
-.n-pode > h3 {
+.n-pode > h3, .n-pode li::marker {
     color: red;
 }
 
-.n-pode li::marker {
-    color: red;
-}
 
 
 .grid-eleito {
@@ -388,9 +385,49 @@ th {
     
 /* LEGISLAÇÃO */
  
+#caminho {
+    background-color: var(--cor-1);
+}
+
+#caminho h2, #caminho > .container > p {
+    color: white;
+}
 .grid-caminho {
     grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
 }
+
+.card-caminho {
+    border-radius: 5px;
+    border: 1px solid var(--cor-4);
+}
+
+#voz {
+    background-color: var(--cor-4);
+}
+#voz p {
+    margin: 0px 20px 20px 20px;
+    color: white;
+}
+
+#voz h2 {
+    color: white;
+}
+#voz h3 {
+    margin-bottom: 0px;
+    color: var(--cor-5);
+}
+
+
+
+.numeracao {
+    display: flex;
+    
+}
+
+.numeracao .numero {
+    margin-right: 40px;
+}
+
 
 /* BASTIDORES */
 
@@ -409,6 +446,7 @@ th {
     padding: 20px;
     border: 1px solid #e8d9bc;
     color: #5c3a00;
+    margin-bottom: 30px;
 }
 
 .grid-lai {
@@ -449,19 +487,27 @@ ul {
 }
 
 
+#transparencia {
+    background-color: white;
+}
+#transparencia > .home-inicio {
+    align-items: flex-start;
+}
 
-#voz {
+#esic {
     background-color: var(--cor-1);
 }
-#voz p {
-    margin: 0px 20px 20px 20px;
+
+#esic h2, #esic > .container > p {
     color: white;
 }
 
-#voz h2 {
-    color: white;
+
+.negarem {
+    background-color: white;
+    padding: 25px;
 }
-#voz h3 {
-    margin-bottom: 0px;
-    color: var(--cor-5);
+
+#esic > .negarem > p {
+    color: black;
 }
