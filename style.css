@@ -10,7 +10,6 @@
 
     --cor-1: #133123;
     --cor-2: #1a4731;
-    --cor-3: #1F3F63;
     --cor-4: #2d6a4f;
     --cor-5: #b89b1c;
     --cor-6: rgb(94, 94, 94);
@@ -132,6 +131,16 @@ main {
     transform: translateY(-5px);
 }
 
+.numero {
+    background-color: var(--cor-2);
+    color: var(--cor-5);
+    border-radius: 50px;
+    width: 30px;
+    text-align: center;
+    margin-bottom: 15px;
+    
+}
+
 footer{
     background-color: black;
     color: white;
@@ -212,19 +221,23 @@ article img {
     margin: 0px auto 20px auto;
 }
 
-article a {
+a {
     text-decoration: none;
     color: var(--cor-5);
+    font-weight: bold;
+}
+
+article a {
+   
     margin-top: 1rem;
     font-size: 0.85rem;
-    font-weight: bold;
     display: flex;
     align-items: center;
     gap: 0.35rem;
     
 }
 
-article a:hover {
+a:hover {
     text-decoration: underline;
 }
 
@@ -263,10 +276,11 @@ article a:hover {
 
 .funcoes-card {
     margin-top: 30px;
+    border-radius: 5px;
 }
-.funcoes-card h3 {
-    color: var(--cor-5);
-}
+
+
+
 
 .vereador-cards {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -277,6 +291,31 @@ article a:hover {
     border-radius: 5px;
     padding: 40px;
 }
+
+.pode {
+    border-top: 3px solid rgb(17, 151, 17);
+}
+
+.pode > h3 {
+    color: rgb(17, 151, 17);
+}
+
+.pode li::marker {
+    color: rgb(17, 151, 17);
+}
+
+.n-pode {
+    border-top: 3px solid red;
+}
+
+.n-pode > h3 {
+    color: red;
+}
+
+.n-pode li::marker {
+    color: red;
+}
+
 
 .grid-eleito {
     grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
@@ -307,17 +346,24 @@ table {
     max-width: 600px;
     border-collapse: collapse;
     margin: auto;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.342);
 }
 
 td {
     
-    border: 1px solid rgba(107, 107, 107, 0.466);
+    border-bottom: 1px solid #e5e5e5;
     background-color: white;
-    padding: 15px 5px;
+    padding: 16px 20px;
     text-align: center;
     vertical-align: middle;
 }
 
+th {
+    background-color: var(--cor-1);
+    color: white;
+    padding: 16px 20px;
+
+}
 
 .grid-acompanhar{
     display:grid;
