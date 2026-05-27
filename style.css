@@ -183,7 +183,7 @@ footer{
       width: 50px;
       height: 3px;
       background: var(--cor-5);
-      margin-bottom: 2.2rem;
+      margin-bottom: 30px;
     }
 
 
@@ -272,6 +272,14 @@ a:hover {
     color: white;
 }
 
+/* #destaques > .container > p {
+    margin: 20px 0px;
+}
+ */
+.grid-legislativo {
+    padding: 30px 0px;
+}
+
 
 .camara-cards {
     
@@ -293,7 +301,7 @@ a:hover {
 }
 
 
-#link {
+#organizacao > .container > p.link {
     margin-top: 50px ;
 }
 
@@ -465,6 +473,8 @@ th {
 #estrutura {
     background-color: var(--cor-1);
 }
+
+
 .grid-estrutura {
     grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
 }
