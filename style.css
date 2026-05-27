@@ -54,6 +54,7 @@ h2 {
 p {
     font-size: 1.15em;
     line-height: 1.7em;
+    font-family: var(--fonte-02);
 }
 
 p + p {
@@ -161,6 +162,7 @@ footer{
     text-align: center;
     padding: 120px 20px;
     display: flex;
+    border-bottom: 2px solid var(--cor-5);
 }
 
 .hero h1 {
@@ -183,6 +185,11 @@ footer{
       background: var(--cor-5);
       margin-bottom: 2.2rem;
     }
+
+
+#estrutura > .container > .secao-linha {
+    margin-bottom: 0px;
+}
 
 /* HOME */
 
@@ -248,11 +255,22 @@ a:hover {
 
 /* CÂMARA */
 
-.sobre, #organizacao {
+.sobre  {
     background-color: white;
 }
 
+#organizacao {
+    background-color: var(--cor-1);
+}
 
+#organizacao > .container > p {
+    color: white;
+    margin: 20px 0px;
+}
+
+#organizacao > .container > h2 {
+    color: white;
+}
 
 
 .camara-cards {
@@ -431,6 +449,9 @@ th {
 
 /* BASTIDORES */
 
+#servidores {
+    background-color: white;
+}
 .grid-servidores {
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
@@ -439,6 +460,18 @@ th {
     max-width: 600px;
     display: block;
     margin: auto;
+}
+
+#estrutura {
+    background-color: var(--cor-1);
+}
+.grid-estrutura {
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+}
+
+.card-estrutura {
+    border-radius: 0px;
+
 }
 
 #lai {
