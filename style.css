@@ -69,6 +69,19 @@ article > span > img {
     width: 20%;
 }
 
+.icon-fundo {
+    margin-right: 20px;
+    background-color: #2d6a4f6e;
+    width: 30px;
+    height: 25px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center; /* Centralizar icon na div. Conjunto com display: flex */
+    
+}
+
+
+
 /* LAYOUT GERAL */
 
 header {
@@ -621,4 +634,32 @@ ul {
 
 li {
     margin: 10px 0px;
+}
+
+/* CONTATOS */
+
+#contato {
+    background-color: white;
+}
+.grid-canais {
+    margin-top: 20px;
+}
+
+
+#telefones {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: 10px 0px;
+    color: var(--cor-5);
+}
+.card-sociais{
+    text-align: center;
+
+}
+
+
+.card-sociais > a{
+    justify-content: center
+
 }
