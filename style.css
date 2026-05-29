@@ -54,7 +54,7 @@ h2 {
 p {
     font-size: 1.15em;
     line-height: 1.7em;
-    font-family: var(--fonte-02);
+  
 }
 
 p + p {
@@ -166,7 +166,7 @@ footer{
 }
 
 .hero h1 {
-    font-size: 4em;
+    font-size: clamp(2.5rem, 5vw, 4rem); /* Limita um valor entre um mínimo e um máximo */
     margin-bottom: 20px;
 }
 
@@ -268,6 +268,11 @@ a:hover {
     margin: 20px 0px;
 }
 
+#organizacao > .container > p.link {
+
+    margin-top: 50px;
+}
+
 #organizacao > .container > h2 {
     color: white;
 }
@@ -301,8 +306,8 @@ a:hover {
 }
 
 
-#organizacao > .container > p.link {
-    margin-top: 50px ;
+.container > p.link {
+    margin-top: 30px ;
 }
 
 .funcoes-card {
@@ -415,8 +420,12 @@ th {
     background-color: var(--cor-1);
 }
 
-#caminho h2, #caminho > .container > p {
+#caminho h2, #caminho > .container {
     color: white;
+}
+
+#caminho h3 {
+    color: var(--cor-5);
 }
 .grid-caminho {
     grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
@@ -443,7 +452,19 @@ th {
     color: var(--cor-5);
 }
 
+.grid-voz {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
 
+.card-voz {
+    background-color: rgba(255, 255, 255, 0.103);
+    border-top: 2px solid var(--cor-5);
+}
+
+.card-voz h3{
+    text-align: center;
+    padding-bottom: 5px;
+}
 
 .numeracao {
     display: flex;
@@ -454,6 +475,39 @@ th {
     margin-right: 40px;
 }
 
+
+
+
+.etapas {
+    display: flex;
+    flex-direction: column;
+}
+
+.etapa {
+    display: flex;
+    gap: 16px;
+    padding: 16px 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.etapa:last-child {
+    border-bottom: none;
+}
+
+.etapa-esquerda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    width: 32px;
+}
+
+.etapa-linha {
+    width: 1px;
+    flex: 1;
+    background: rgba(255, 255, 255, 0.15);
+    margin-top: 6px;
+}
 
 /* BASTIDORES */
 
@@ -480,8 +534,15 @@ th {
 }
 
 .card-estrutura {
-    border-radius: 0px;
+    background-color: var(--cor-2);
+    border-top: 3px solid var(--cor-5);
 
+
+}
+
+#estrutura h2, .card-estrutura > h3, .card-estrutura > p {
+    color: white;
+    
 }
 
 #lai {
@@ -539,6 +600,7 @@ ul {
 
 #esic {
     background-color: var(--cor-1);
+    padding-bottom: 20px;
 }
 
 #esic h2, #esic > .container > p {
@@ -549,8 +611,14 @@ ul {
 .negarem {
     background-color: white;
     padding: 25px;
+    margin-bottom: 20px;
 }
 
 #esic > .negarem > p {
     color: black;
+}
+
+
+li {
+    margin: 10px 0px;
 }
