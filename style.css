@@ -80,8 +80,15 @@ article > span > img {
     
 }
 
+.secao-white {
+    background-color: white;
+}
 
+.secao-verde {
+    background-color: var(--cor-1);
+}
 
+.secao-verd
 /* LAYOUT GERAL */
 
 header {
@@ -281,13 +288,9 @@ a:hover {
 
 /* CÂMARA */
 
-.sobre  {
-    background-color: white;
-}
 
-#organizacao {
-    background-color: var(--cor-1);
-}
+
+
 
 #organizacao > .container > p {
     color: white;
@@ -327,9 +330,7 @@ a:hover {
 
 /* VEREADORES */
 
-#vereadores-inicio, #vereador {
-    background-color: white;
-}
+
 
 
 .container > p.link {
@@ -442,9 +443,7 @@ th {
     
 /* LEGISLAÇÃO */
  
-#caminho {
-    background-color: var(--cor-1);
-}
+
 
 #caminho h2, #caminho > .container {
     color: white;
@@ -537,9 +536,6 @@ th {
 
 /* BASTIDORES */
 
-#servidores {
-    background-color: white;
-}
 .grid-servidores {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
@@ -548,10 +544,6 @@ th {
     max-width: 600px;
     display: block;
     margin: auto;
-}
-
-#estrutura {
-    background-color: var(--cor-1);
 }
 
 
@@ -601,9 +593,6 @@ ul {
 }
 
 
-#presencial {
-    background-color: var(--cor-1);
-}
 #presencial p {
     margin: 0px 20px 20px 20px;
     color: white;
@@ -618,9 +607,6 @@ ul {
 }
 
 
-#transparencia {
-    background-color: white;
-}
 #transparencia > .home-inicio {
     align-items: flex-start;
 }
@@ -652,9 +638,7 @@ li {
 
 /* CONTATOS */
 
-#contato {
-    background-color: white;
-}
+
 .grid-canais {
     margin-top: 20px;
 }
