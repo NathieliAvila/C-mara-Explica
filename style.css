@@ -683,3 +683,51 @@ li {
 div.icon-estrutura {
     background-color: none;
 }
+
+footer {
+    background-color: #0d2318;
+}
+
+footer > .container {
+    padding: 0px;
+
+}
+
+.footer-topo {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr 1fr; /* a primeira é 60% maior que as outras */
+    gap: 32px;
+    padding: 48px 0px 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    
+}
+
+
+.ft-selo {
+    padding: 14px 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.ft-selo p, .ft-rodape p {
+    font-size: 0.8em;
+    color: rgb(255, 255, 255, 0.15);
+    
+}
+
+.ft-selo strong {
+    color: rgba(255, 255, 255, 0.05);
+}
+
+.ft-rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* quebra a linha em telas menores */
+    padding: 16px 0px;
+}
+
+ .ft-rodape a {
+    font-size: 1em;
+ }
+
+ 
