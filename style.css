@@ -71,9 +71,9 @@ a:hover {
     text-decoration: underline;
 }
 
-
 .icon img {
     width: 20%;
+    
 }
 
 .icon-fundo {
@@ -85,7 +85,6 @@ a:hover {
     display: flex;
     justify-content: center;
     /* Centralizar icon na div. Conjunto com display: flex */
-
 }
 
 .letra {
@@ -189,7 +188,8 @@ main {
     background-color: var(--cor-2);
     color: var(--cor-5);
     border-radius: 50px;
-    width: 30px;
+    min-width: 30px;
+    height: 30px;
     text-align: center;
     margin-bottom: 15px;
 
@@ -303,7 +303,7 @@ footer>.container {
 article img {
     width: 100%;
     display: block;
-    margin-bottom: 20px;
+    margin: 0px auto 20px auto;
 }
 
 article a {
@@ -381,8 +381,6 @@ article a {
     color: red;
 }
 
-
-
 .grid-eleito {
     grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
 }
@@ -392,7 +390,6 @@ article a {
     color: var(--cor-6);
     border-top-color: white;
 }
-
 
 #quantidade {
     background-color: var(--cor-2);
@@ -406,7 +403,6 @@ article a {
 #acompanhar h3 {
     color: var(--cor-5);
 }
-
 
 table {
     width: 100%;
@@ -568,7 +564,7 @@ th {
 
 #estrutura h2,
 .card-estrutura>h3,
-.card-estrutura>p {
+.card-estrutura>p, #estrutura article > .numeracao h3 {
     color: white;
 }
 
@@ -595,7 +591,6 @@ th {
 ul {
     list-style-position: inside;
 }
-
 
 
 .grid-canais {
@@ -638,9 +633,7 @@ li {
 
 
 
-div.icon-estrutura {
-    background-color: transparent;
-}
+
 
 
 /* CONTATOS */
@@ -675,12 +668,10 @@ div.icon-estrutura {
 
 .card-sociais {
     text-align: center;
-
 }
 
 
 .card-sociais>a {
     justify-content: center
 }
-
 
