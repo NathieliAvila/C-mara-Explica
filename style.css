@@ -35,7 +35,9 @@ body {
     flex-direction: column;
 }
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
     font-family: var(--fonte-01);
 }
 
@@ -55,7 +57,7 @@ p {
     line-height: 1.7em;
 }
 
-p + p {
+p+p {
     margin-top: 16px;
 }
 
@@ -69,11 +71,8 @@ a:hover {
     text-decoration: underline;
 }
 
-article > span > img {
-   max-width: 30%;
-}
 
-.sobre-destaque-icon img {
+.icon img {
     width: 20%;
 }
 
@@ -84,8 +83,9 @@ article > span > img {
     height: 25px;
     border-radius: 5px;
     display: flex;
-    justify-content: center; /* Centralizar icon na div. Conjunto com display: flex */
-    
+    justify-content: center;
+    /* Centralizar icon na div. Conjunto com display: flex */
+
 }
 
 .letra {
@@ -105,11 +105,11 @@ article > span > img {
 
 
 .secao-linha {
-      width: 50px;
-      height: 3px;
-      background: var(--cor-5);
-      margin-bottom: 10px;
-    }
+    width: 50px;
+    height: 3px;
+    background: var(--cor-5);
+    margin-bottom: 10px;
+}
 
 
 
@@ -128,21 +128,26 @@ header {
     z-index: 100;
 }
 
-nav{
-    display: flex; /* cria contêiner flexivel, redimensionando os elementos. Torna mais responsivo */
-    justify-content: center; /* centraliza */
-    gap: 30px; /* Espaçamento entre elementos do menu */
-    flex-wrap: wrap; /* quebra de linha */
+nav {
+    display: flex;
+    /* cria contêiner flexivel, redimensionando os elementos. Torna mais responsivo */
+    justify-content: center;
+    /* centraliza */
+    gap: 30px;
+    /* Espaçamento entre elementos do menu */
+    flex-wrap: wrap;
+    /* quebra de linha */
 }
 
-nav > a {
+nav>a {
     color: white;
     font-size: 1.3rem;
     padding: 5px;
     border-radius: 5px;
 }
 
-nav a:hover, a.ativo {
+nav a:hover,
+a.ativo {
     color: var(--cor-5);
     border-bottom: 2px solid var(--cor-5);
     text-decoration: none;
@@ -187,26 +192,27 @@ main {
     width: 30px;
     text-align: center;
     margin-bottom: 15px;
-    
+
 }
 
-footer{
+footer {
     background-color: #0d2318;
     color: white;
 }
 
 
 
-footer > .container {
+footer>.container {
     padding: 15px;
 
 }
 
 .footer-topo {
     display: grid;
-    grid-template-columns: 1.6fr 1fr 1fr 1fr; /* a primeira é 60% maior que as outras */
+    grid-template-columns: 1.6fr 1fr 1fr 1fr;
+    /* a primeira é 60% maior que as outras */
     gap: 32px;
-    padding: 50px 0px ;
+    padding: 50px 0px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -215,10 +221,11 @@ footer > .container {
     border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-.ft-selo p, .ft-rodape p {
+.ft-selo p,
+.ft-rodape p {
     font-size: 0.8em;
     color: rgba(255, 255, 255, 0.5);
-    
+
 }
 
 .ft-selo strong {
@@ -229,19 +236,20 @@ footer > .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* quebra a linha em telas menores */
+    flex-wrap: wrap;
+    /* quebra a linha em telas menores */
     padding: 16px 0px;
 }
 
- .ft-rodape a {
+.ft-rodape a {
     font-size: 1em;
- }
+}
 
- 
+
 /* HERO */
 
 .hero {
-    background: linear-gradient(to bottom, var(--cor-1) ,var(--cor-2), var(--cor-4));
+    background: linear-gradient(to bottom, var(--cor-1), var(--cor-2), var(--cor-4));
     color: white;
     text-align: center;
     padding: 120px 20px;
@@ -249,7 +257,8 @@ footer > .container {
 }
 
 .hero h1 {
-    font-size: clamp(2.5rem, 5vw, 4rem); /* Limita um valor entre um mínimo e um máximo */
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    /* Limita um valor entre um mínimo e um máximo */
     margin-bottom: 20px;
 }
 
@@ -277,8 +286,9 @@ footer > .container {
 
 .home-cards {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    
+
 }
+
 .home-card {
     border-top-color: white;
     display: flex;
@@ -286,13 +296,14 @@ footer > .container {
 }
 
 .home-card a:last-of-type {
-    margin-top: auto; /* link fica embaixo, usado em conjunto com display e flex-direction no container pai*/
+    margin-top: auto;
+    /* link fica embaixo, usado em conjunto com display e flex-direction no container pai*/
 }
 
 article img {
     width: 100%;
     display: block;
-    margin-bottom: 20px ;
+    margin-bottom: 20px;
 }
 
 article a {
@@ -303,17 +314,17 @@ article a {
 
 /* CÂMARA */
 
-#organizacao > .container > p {
+#organizacao>.container>p,
+#organizacao h2 {
     color: white;
+}
+
+#organizacao>.container>p {
     margin: 20px 0px;
 }
 
-#organizacao > .container > .link {
+#organizacao>.container>.link {
     margin-top: 50px;
-}
-
-#organizacao h2 {
-    color: white;
 }
 
 .grid-legislativo {
@@ -323,21 +334,16 @@ article a {
 .camara-cards {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+
 .camara-card {
     padding: 20px 20px 15px 40px;
 }
 
 
-
-
-
 /* VEREADORES */
 
-
-
-
-.container > p.link {
-    margin-top: 30px ;
+.link {
+    margin-top: 30px;
 }
 
 .funcoes-card {
@@ -348,7 +354,7 @@ article a {
 
 .vereador-cards {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    
+
 }
 
 .vereador-card {
@@ -360,7 +366,8 @@ article a {
     border-top: 3px solid rgb(17, 151, 17);
 }
 
-.pode > h3, .pode li::marker  {
+.pode>h3,
+.pode li::marker {
     color: rgb(17, 151, 17);
 }
 
@@ -369,7 +376,8 @@ article a {
     border-top: 3px solid red;
 }
 
-.n-pode > h3, .n-pode li::marker {
+.n-pode>h3,
+.n-pode li::marker {
     color: red;
 }
 
@@ -390,7 +398,8 @@ article a {
     background-color: var(--cor-2);
 }
 
-#quantidade h2, #quantidade p{
+#quantidade h2,
+#quantidade p {
     color: white;
 }
 
@@ -408,7 +417,6 @@ table {
 }
 
 td {
-    
     border-bottom: 1px solid #e5e5e5;
     background-color: white;
     padding: 16px 20px;
@@ -420,41 +428,37 @@ th {
     background-color: var(--cor-1);
     color: white;
     padding: 16px 20px;
-
 }
 
-.grid-acompanhar{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:1.5rem;
-    margin-top:2rem
+.grid-acompanhar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem
 }
 
-
-.card-acompanhar{
+.card-acompanhar {
     background: var(--cor-2);
-    color:white;
+    color: white;
     border-radius: 5px;
     border: 1px solid var(--cor-4);
-    padding:1.8rem;
+    padding: 1.8rem;
 }
 
-.card-acompanhar h3 {
-    color: white;
-}
-    
-    
+
 /* LEGISLAÇÃO */
- 
 
 
-#caminho h2, #caminho > .container {
+
+#caminho h2,
+#caminho >.container, #voz h2, #voz p {
     color: white;
 }
 
 #caminho h3 {
     color: var(--cor-5);
 }
+
 .grid-caminho {
     grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
 }
@@ -467,14 +471,12 @@ th {
 #voz {
     background-color: var(--cor-4);
 }
+
 #voz p {
     margin: 0px 20px 20px 20px;
-    color: white;
 }
 
-#voz h2 {
-    color: white;
-}
+
 #voz h3 {
     margin-bottom: 0px;
     color: var(--cor-5);
@@ -489,14 +491,14 @@ th {
     border-top: 2px solid var(--cor-5);
 }
 
-.card-voz h3{
+.card-voz h3 {
     text-align: center;
     padding-bottom: 5px;
 }
 
 .numeracao {
     display: flex;
-    
+
 }
 
 .numeracao .numero {
@@ -558,19 +560,21 @@ th {
     background-color: rgba(255, 255, 255, 0.103);
     border-top: 3px solid var(--cor-5);
     border-left: 3px solid var(--cor-5);
-
-
 }
 
-#estrutura > .container > .secao-linha {
+#estrutura>.container>.secao-linha {
     margin-bottom: 0px;
 }
 
-#estrutura h2, .card-estrutura > h3, .card-estrutura > p {
+#estrutura h2,
+.card-estrutura>h3,
+.card-estrutura>p {
     color: white;
-    
 }
 
+#estrutura {
+    margin-bottom: -25px;
+}
 #lai {
     background-color: #fdf3e0;
     padding: 20px;
@@ -600,21 +604,9 @@ ul {
 }
 
 
-#presencial p {
-    margin: 0px 20px 20px 20px;
-    color: white;
-}
-
-#presencial h2 {
-    color: white;
-}
-#presencial h3 {
-    margin-bottom: 0px;
-    color: var(--cor-5);
-}
 
 
-#transparencia > .home-inicio {
+#transparencia>.home-inicio {
     align-items: flex-start;
 }
 
@@ -623,7 +615,8 @@ ul {
     padding-bottom: 20px;
 }
 
-#esic h2, #esic > .container > p {
+#esic h2,
+#esic>.container>p {
     color: white;
 }
 
@@ -643,11 +636,32 @@ li {
     margin: 10px 0px;
 }
 
+
+
+div.icon-estrutura {
+    background-color: transparent;
+}
+
+
 /* CONTATOS */
 
 
 .grid-canais {
     margin-top: 20px;
+}
+
+
+#presencial p {
+    margin: 0px 20px 20px 20px;
+}
+
+#presencial h2, #presencial p {
+    color: white;
+}
+
+#presencial h3 {
+    margin-bottom: 0px;
+    color: var(--cor-5);
 }
 
 
@@ -658,20 +672,15 @@ li {
     margin: 10px 0px;
     color: var(--cor-5);
 }
-.card-sociais{
+
+.card-sociais {
     text-align: center;
 
 }
 
 
-.card-sociais > a{
+.card-sociais>a {
     justify-content: center
-
 }
 
-
-
-div.icon-estrutura {
-    background-color: none;
-}
 
