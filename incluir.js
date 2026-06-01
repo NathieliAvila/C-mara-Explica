@@ -6,6 +6,17 @@ async function carregarHeader() {
 
     document.getElementById("header").innerHTML = conteudo; /* transforma o texto em código html e altera o código principal */
 
+
+
+    const botao = document.getElementById("botao-menu");
+    const menu = document.getElementById("menu");
+
+    if (botao && menu) {botao.addEventListener("click", () => {
+        menu.classList.toggle("ativo");
+    });
+    }
+
+
     const paginaAtual = window.location.pathname; /* descobre a página em que o usuário está*/
 
     const links = document.querySelectorAll("nav a"); /* seleciona e agrupa todos o links que estão em nav. Gera uma lista */

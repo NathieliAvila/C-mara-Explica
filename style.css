@@ -684,6 +684,12 @@ li {
     justify-content: center
 }
 
+
+.botao-menu {
+   display: none;
+} 
+
+
 @media (max-width: 1010px) {
     nav {
         gap: 20px;
@@ -746,6 +752,27 @@ li {
 
 
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
+
+    .botao-menu {
+        display: block;
+        background: none;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
     
+    nav {
+        display: none;
+        
+    }
+
+    nav.ativo {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 15px;
+    }
 }
+
+
