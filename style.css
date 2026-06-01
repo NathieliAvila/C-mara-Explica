@@ -533,6 +533,9 @@ ul {
     list-style-position: inside;
 }
 
+.card-site {
+    margin-top: 25px;
+}
 .grid-site {
     grid-template-columns: 1fr;
 }
