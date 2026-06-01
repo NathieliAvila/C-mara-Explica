@@ -111,11 +111,6 @@ a:hover {
 }
 
 
-
-
-
-
-
 /* LAYOUT GERAL */
 
 header {
@@ -179,7 +174,6 @@ main {
     transition: 0.5s;
 }
 
-
 .card-base:hover {
     transform: translateY(-5px);
 }
@@ -192,15 +186,12 @@ main {
     height: 30px;
     text-align: center;
     margin-bottom: 15px;
-
 }
 
 footer {
-    background-color: #0d2318;
+    background-color: #000000;
     color: white;
 }
-
-
 
 footer>.container {
     padding: 15px;
@@ -257,7 +248,7 @@ footer>.container {
 }
 
 .hero h1 {
-    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-size: clamp(2.5rem, 5vw, 5rem);
     /* Limita um valor entre um mínimo e um máximo */
     margin-bottom: 20px;
 }
@@ -504,6 +495,8 @@ th {
 
 
 
+/* footer */
+
 .etapas {
     display: flex;
     flex-direction: column;
@@ -538,7 +531,7 @@ th {
 /* BASTIDORES */
 
 .grid-servidores {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .img-servidores {
@@ -594,8 +587,20 @@ ul {
 
 
 .grid-canais {
-    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-bottom: 30px;
+}
 
+
+.grid-site {
+    grid-template-columns: 1fr;
+}
+.card-site ul {
+    columns: 3;
+}
+
+.card-site p {
+    padding: 10px 0;
 }
 
 
@@ -604,6 +609,12 @@ ul {
 #transparencia>.home-inicio {
     align-items: flex-start;
 }
+
+.grid-portal {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));;
+}
+
+
 
 #esic {
     background-color: var(--cor-1);
@@ -638,11 +649,9 @@ li {
 
 /* CONTATOS */
 
-
 .grid-canais {
     margin-top: 20px;
 }
-
 
 #presencial p {
     margin: 0px 20px 20px 20px;
@@ -675,3 +684,68 @@ li {
     justify-content: center
 }
 
+@media (max-width: 1010px) {
+    nav {
+        gap: 20px;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    .hero {
+        padding: 100px 20px;
+    }
+
+    #transparencia>.home-inicio {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 776px) {
+
+    header {
+        padding: 20px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 0.8rem;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .hero {
+        padding: 90px 20px;
+    }
+   
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .grid-acompanhar {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-voz {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+
+    .footer-topo {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+
+}
+
+
+
+@media (max-width: 480px) {
+    
+}
