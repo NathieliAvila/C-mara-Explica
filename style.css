@@ -149,7 +149,6 @@ a.ativo {
 
 main {
     flex: 1;
-    padding-top: 60px;
 }
 
 .container {
@@ -752,7 +751,7 @@ li {
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 667px) {
 
     .botao-menu {
         display: block;
@@ -762,9 +761,11 @@ li {
         cursor: pointer;
     }
     
+    header {
+        padding: 5px;
+    }
     nav {
         display: none;
-        
     }
 
     nav.ativo {
@@ -772,6 +773,18 @@ li {
         flex-direction: column;
         gap: 10px;
         padding-top: 15px;
+    }
+
+    nav > a {
+        border-radius: 0px;
+    }
+
+    nav > a:hover, a.ativo {
+        border-bottom: 1px solid var(--cor-5);
+    }
+
+    .footer-topo {
+        grid-template-columns: 1fr;
     }
 }
 
