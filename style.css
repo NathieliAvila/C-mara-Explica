@@ -199,8 +199,8 @@ footer>.container {
 
 .footer-topo {
     display: grid;
-    grid-template-columns: 1.6fr 1fr 1fr 1fr;
-    /* a primeira é 60% maior que as outras */
+    grid-template-columns: 1fr 1fr 1fr 1.6fr;
+    /* a última é 60% maior que as outras */
     gap: 32px;
     padding: 50px 0px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -494,38 +494,6 @@ th {
 
 
 
-/* footer */
-
-.etapas {
-    display: flex;
-    flex-direction: column;
-}
-
-.etapa {
-    display: flex;
-    gap: 16px;
-    padding: 16px 0px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.etapa:last-child {
-    border-bottom: none;
-}
-
-.etapa-esquerda {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-shrink: 0;
-    width: 32px;
-}
-
-.etapa-linha {
-    width: 1px;
-    flex: 1;
-    background: rgba(255, 255, 255, 0.15);
-    margin-top: 6px;
-}
 
 /* BASTIDORES */
 
@@ -691,6 +659,50 @@ li {
 } 
 
 
+
+/* footer */
+
+.etapas {
+    display: flex;
+    flex-direction: column;
+}
+
+.etapa {
+    display: flex;
+    gap: 16px;
+    padding: 16px 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.etapa:last-child {
+    border-bottom: none;
+}
+
+.etapa-esquerda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    width: 32px;
+}
+
+.etapa-linha {
+    width: 1px;
+    flex: 1;
+    background: rgba(255, 255, 255, 0.15);
+    margin-top: 6px;
+}
+
+.ft-nome {
+    color: white;
+}
+
+ span.ft-contato-icone{
+    padding-right: 10px;
+}
+
+
+
 @media (max-width: 1024px) {
     nav {
         gap: 20px;
@@ -800,6 +812,3 @@ li {
 }
 
 
-* {
-    outline: 1px solid red;
-}
