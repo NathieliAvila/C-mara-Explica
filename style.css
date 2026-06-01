@@ -72,7 +72,7 @@ a:hover {
 }
 
 .icon img {
-    width: 20%;
+    width: 3em;
     
 }
 
@@ -372,7 +372,7 @@ article a {
 }
 
 .grid-eleito {
-    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .card-eleito {
@@ -595,7 +595,7 @@ ul {
     grid-template-columns: 1fr;
 }
 .card-site ul {
-    columns: 3;
+    columns: 2;
 }
 
 .card-site p {
@@ -643,7 +643,9 @@ li {
 
 
 
-
+#estrutura-imagem img {
+        width: 100%;
+    }
 
 
 /* CONTATOS */
@@ -689,7 +691,7 @@ li {
 } 
 
 
-@media (max-width: 1010px) {
+@media (max-width: 1024px) {
     nav {
         gap: 20px;
     }
@@ -707,10 +709,10 @@ li {
     }
 }
 
-@media (max-width: 776px) {
+@media (max-width: 768px) {
 
     header {
-        padding: 20px;
+        padding: 10px;
     }
 
     nav {
@@ -718,11 +720,7 @@ li {
     }
 
     nav a {
-        font-size: 0.8rem;
-    }
-
-    .container {
-        width: 90%;
+        font-size: 0.7rem;
     }
 
     .hero {
@@ -740,7 +738,10 @@ li {
     .grid-voz {
         grid-template-columns: 1fr 1fr;
     }
-    
+
+    .grid-estrutura {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
 
     .footer-topo {
         grid-template-columns: 1fr 1fr;
@@ -749,9 +750,8 @@ li {
 
 }
 
-
-
-@media (max-width: 667px) {
+@media (max-width: 600px) {
+    
 
     .botao-menu {
         display: block;
@@ -783,9 +783,23 @@ li {
         border-bottom: 1px solid var(--cor-5);
     }
 
-    .footer-topo {
+    th {
+        padding: 5px;
+    }
+
+    td {
+        padding: 5px 10px;
+    }
+
+    .grid-voz, .grid-estrutura, .grid-lai, .grid-canais, .footer-topo  {
         grid-template-columns: 1fr;
     }
+
+    
+
 }
 
 
+* {
+    outline: 1px solid red;
+}
